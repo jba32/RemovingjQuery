@@ -97,7 +97,7 @@
 			    shouldBeChecked = newThis.getActiveTodos().length === 0;
 			document.getElementById('todo-list').innerHTML = this.todoTemplate(todos);
 			if (todos.length > 0) {
-			  // Display might supposed to be set to something else, but I'm too lazy to check + change it
+			  // Display might supposed to be set to something else, but I'm too lazy to check + change it 
 			  document.getElementById('main').style.display = 'block';
 			} else {
 			  document.getElementById('main').style.display = 'none';
