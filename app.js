@@ -58,8 +58,6 @@
       var toggleall = document.getElementById('toggle-all');
       toggleall.addEventListener('change', this.toggleAll.bind(this));
       var footer = document.getElementById('footer');
-      // var clearCompleted = document.getElementById('clear-completed');
-      // addEvent(footer, 'click', clearCompleted, this.destroyCompleted());
       footer.addEventListener('click', function(event) {
         if (event.target.id === 'clear-completed') {
           newThis.destroyCompleted();
@@ -99,7 +97,6 @@
           shouldBeChecked = newThis.getActiveTodos().length === 0;
       document.getElementById('todo-list').innerHTML = this.todoTemplate(todos);
       if (todos.length > 0) {
-        // Display might supposed to be set to something else, but I'm too lazy to check + change it
         document.getElementById('main').style.display = 'block';
       } else {
         document.getElementById('main').style.display = 'none';
